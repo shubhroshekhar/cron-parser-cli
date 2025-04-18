@@ -14,21 +14,15 @@ A command-line tool to parse and expand cron expressions into their individual c
 1. Clone the repository:
    ```bash
    git clone git@github.com:shubhroshekhar/cron-parser-cli.git
-   cd cron-parser-cli
-   ```
-
-2. Create a virtual environment and install dependencies:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
    ```
 
 ## Usage
 
 Run the CLI tool with a cron expression as an argument:
 ```bash
-python main.py "*/15 0 1,15 * 1-5 /usr/bin/find"
+python3 main.py "*/15 0 1,15 * 1-5 /usr/bin/find"
 ```
+
 
 ### Example Output
 ```plaintext
@@ -44,5 +38,5 @@ command       /usr/bin/find
 
 Run the unit tests to ensure everything works as expected:
 ```bash
-python -m unittest discover tests
+python3 -m unittest discover tests
 ```
